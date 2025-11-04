@@ -137,7 +137,7 @@ if [ ! -d "$HOME_DIR/noVNC" ]; then
 fi
 
 # Install websockify
-pip3 install websockify
+pip3 install websockify --break-system-packages
 
 # Create noVNC startup script
 cat > "$HOME_DIR/start-novnc.sh" << EOL
